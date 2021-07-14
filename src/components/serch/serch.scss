@@ -1,0 +1,114 @@
+.serch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    width: 146px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    line-height: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    pointer-events: all;
+  }
+
+  &__textSerch {
+    margin-right: 29px;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover {
+      color: blue;
+      background-color: transparent;
+      border-color: transparent;
+      &::before {
+        content: '';
+        width: 68px;
+        height: 2px;
+        display: block;
+        background: #1890ff;
+        position: absolute;
+        bottom: -16px;
+        left: -17px;
+      }
+    }
+  }
+
+  &__textRated {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    &:hover {
+      color: blue;
+      background-color: transparent;
+      border-color: transparent;
+      &::before {
+        content: '';
+        width: 75px;
+        height: 2px;
+        display: block;
+        background: #1890ff;
+        position: absolute;
+        bottom: -16px;
+        left: -17px;
+      }
+    }
+  }
+
+  &__input {
+    width: 936px;
+    height: 40px;
+    margin-top: 20px;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.25);
+    border: 1px solid #d9d9d9;
+    margin-left: -10px;
+    font-size: 20px;
+    &:focus {
+      color: black;
+    }
+  }
+}
+.selected {
+  color: blue;
+  background-color: transparent;
+  border-color: transparent;
+  &::before {
+    content: '';
+    width: 75px;
+    height: 2px;
+    display: block;
+    background: #1890ff;
+    position: absolute;
+    bottom: -16px;
+    left: -17px;
+  }
+}
+@media (max-width: 1030px) {
+  .serch {
+    &__input {
+      width: 500px;
+      height: 30px;
+      font-size: 15px;
+      margin-left: 30px;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .serch {
+    &__input {
+      width: 388px;
+      height: 30px;
+      font-size: 15px;
+      margin-left: 10px;
+    }
+  }
+}
