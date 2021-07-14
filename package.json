@@ -1,8 +1,8 @@
 {
-  "home":"http://Ramil192.github.io/serchMovicOnRecat",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage":"http://Ramil192.github.io/serchMovicOnRecat",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
